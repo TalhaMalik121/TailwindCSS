@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdn.tailwindcss.com"></script>
+    <title>TailwindCss Making Custom Classes</title>
+</head>
+<body>
+   <div class="text-center text-5xl text-bold text-newcolor">
+   Muhammad Talha
+   </div>
+    
+</body>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          newcolor: '#00FF00',
+        }
+      }
+    }
+  }
+</script>
+</html>

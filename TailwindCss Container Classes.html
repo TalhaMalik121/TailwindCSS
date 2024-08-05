@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TailwindCss Container Classes</title>
+</head>
+
+<body>
+    <!--Container Classes
+        Class           Breakpoint      Properties
+        container	    None	        width: 100%;
+        sm (640px)	    max-width:      640px;
+        md (768px)	    max-width:      768px;
+        lg (1024px)	    max-width:      1024px;
+        xl (1280px)	    max-width:      1280px;
+        2xl (1536px)	max-width:      1536px;
+     container you see pic 
+         md:container means full width till 768px  breakpoint then according to screens
+         2xl:container means full width till 1536px breakpoint 
+         container means the minimum width according to each break point even own made breakpoints
+         sm:container takes full width till 640px breakpoint 
+         mx-auto is margin auto on x-axis make the div in the center of screen
+         py-2-->
+    <div style="height:80px;" class="sm:container py-5 text-center text-lg  text-red   bg-red-900 mx-auto">
+        Container Classes
+    </div>
+
+</body>
+<script>
+
+
+    tailwind.config = {
+        theme: {
+            screens: {
+                'sm': '640px',
+                // => @media (min-width: 640px) { ... }
+
+                'md': '768px',
+                // => @media (min-width: 768px) { ... }
+
+                'lg': '1024px',
+                // => @media (min-width: 1024px) { ... }
+
+                'xl': '1280px',
+                // => @media (min-width: 1280px) { ... }
+
+                '2xl': '1536px',
+                // => @media (min-width: 1536px) { ... }
+            },
+            extend: {
+                screens: {
+                    //you can give range or only min width its your opinion
+                    'mobile': { 'min': '400px', 'max': '500px' },
+                },
+                colors: {
+                    newcolor: '#00FF00',
+                }
+            }
+        }
+    }
+</script>
+
+</html>

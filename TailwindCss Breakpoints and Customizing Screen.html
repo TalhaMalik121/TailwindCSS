@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TailwindCss Screens/Breakpoints/Customization</title>
+</head>
+
+<body>
+    <div class=" mobile:text-right sm:text-center   text-lg text-bold text-newcolor">
+        Applying Properties acc to Breakpoints
+    </div>
+
+</body>
+<script>
+    //if i did something for a screen so 
+    //it would be done for all larger screens from it but not for smaller
+    //tailwindcss only have five screens so you make your 
+    //own custom screen according to need
+    
+    tailwind.config = {
+        theme: {
+            screens: {
+                'sm': '640px',
+                // => @media (min-width: 640px) { ... }
+
+                'md': '768px',
+                // => @media (min-width: 768px) { ... }
+
+                'lg': '1024px',
+                // => @media (min-width: 1024px) { ... }
+
+                'xl': '1280px',
+                // => @media (min-width: 1280px) { ... }
+
+                '2xl': '1536px',
+                // => @media (min-width: 1536px) { ... }
+            },
+            extend: {
+                screens: {
+                    //you can give range or only min width its your opinion
+                    'mobile': { 'min': '400px', 'max': '500px' },
+                },
+                colors: {
+                    newcolor: '#00FF00',
+                }
+            }
+        }
+    }
+</script>
+
+</html>

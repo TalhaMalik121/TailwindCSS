@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TailwindCss Spanning rows</title>
+</head>
+
+<body>
+    <!--spanning rows are use to give a column more space than one column in grid layout
+    we use 
+    row-span-2 for giving a single column pscae of 2 rows
+    you can also tell were the column start and where end
+    --row-start-1 means start from 1st row
+    --row-end-4 means end at 3 row not 4th
+         -->
+    <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-5  my-2 mx-20">
+        <div class="text-center  py-5 text-white border-2 border-black   bg-[green] row-span-2">
+            WsCube Tech is a team of IT enthusiasts and Digital marketers on a mission to provide cutting-edge web
+            development solutions to businesses and companies around the world.
+            WsCube Tech is a team of IT enthusiasts and Digital marketers on a mission to provide cutting-edge web
+            development solutions to businesses and companies around the world. </div>
+        <div class="  text-center  py-5 text-white border-2 border-black   bg-[green]  row-span-2">
+            WsCube Tech is a team of IT enthusiasts and Digital marketers on a mission to provide cutting-edge web
+            development solutions to businesses and companies around the world. </div>
+        <div class="   text-center  py-5 text-white border-2 border-black row-start-1 row-end-4   bg-[green] ">
+            WsCube Tech is a team of IT enthusiasts and Digital marketers on a mission to provide cutting-edge web
+            development solutions to businesses and companies around the world. </div>
+        <div class="   text-center  py-5 text-white  border-2 border-black  bg-[green] ">
+            WsCube Tech is a team of IT enthusiasts and Digital marketers on a mission to provide cutting-edge web
+            development solutions to businesses and companies around the world.
+        </div>
+        <div class="text-center  py-5 text-white border-2 border-black   bg-[green] ">
+            WsCube Tech is a team of IT enthusiasts and Digital marketers on a mission to provide cutting-edge web
+            development solutions to businesses and companies around the world. </div>
+        <div class="  text-center  py-5 text-white  border-2 border-black  bg-[green]">
+            WsCube Tech is a team of IT enthusiasts and Digital marketers on a mission to provide cutting-edge web
+            development solutions to businesses and companies around the world. </div>
+        <div class="   text-center  py-5 text-white  border-2 border-black  bg-[green] ">
+            WsCube Tech is a team of IT enthusiasts and Digital marketers on a mission to provide cutting-edge web
+            development solutions to businesses and companies around the world. </div>
+        <div class="   text-center  py-5 text-white  border-2 border-black  bg-[green] ">
+            WsCube Tech is a team of IT enthusiasts and Digital marketers on a mission to provide cutting-edge web
+            development solutions to businesses and companies around the world. </div>
+    </div>
+
+</body>
+
+</html>
